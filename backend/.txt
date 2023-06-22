@@ -1,0 +1,135 @@
+// all api information 
+
+1. Add Car Details
+
+API : https://atrryb-backend.onrender.com/buycars/add_car_detail
+
+request : 
+{
+    "image":"https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Punch/7513/1633329515070/front-left-side-47.jpg?tr=w-456",
+    "title": "Tata Punch",
+    "description":"The price of Tata Punch starts at Rs. 6 Lakh and goes upto Rs. 9.52 Lakh."
+}
+response : 
+{
+    "message": "Car Detail Added Successfully.",
+    "data": []
+
+}
+
+2. Update Car Details
+
+API : https://atrryb-backend.onrender.com/buycars/update_car_detail
+
+request:
+{
+    
+    "_id": "648ecd3e7d641ee74c6056aa",
+    "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Punch/7513/1633329515070/front-left-side-47.jpg?tr=w-456",
+    "title": "Tata Punch11111111",
+    "description": "The price of Tata Punch starts at Rs. 6 Lakh and goes upto Rs. 9.52 Lakh. Tata Punch is offered in 26 variants - the base model of Punch is Pure and the top variant Tata Punch Creative AMT IRA DT which comes at a price tag of Rs. 9.52 Lakh.",
+    "createdAt": "2023-06-18T09:01:07.442Z",
+    "updatedAt": "2023-06-18T09:01:07.442Z",
+    "__v": 0
+
+}
+response :
+{
+    
+    "message": "Car Detail update Successfully.",
+    "data": []
+
+}
+
+3.  OEM Add 
+
+API : https://atrryb-backend.onrender.com/buycars/add_oem_detail
+
+request:
+{
+    
+    "model_name":"name1",
+    "year_of_model": "2020",
+    "price_of_new_vehicle":1000,
+    "available_colors":"blue",
+    "mileage": 60,
+    "power": 60,
+    "max_speed":60
+
+}
+response:
+{
+    
+    "message": "OEM_Specs Added Successfully.",
+    "data": []
+
+}
+
+4. OEM search_oem_detail
+
+API : https://atrryb-backend.onrender.com/buycars/search_oem_detail
+
+request:
+{
+    
+    "model_name":"name1"
+
+}
+response:
+{
+    "message": "Car Detail Get Successfully",
+    "data": [
+        {
+            "_id": "648ed31c4990fa101b4e0c8f",
+            "model_name": "name1",
+            "year_of_model": "2020",
+            "price_of_new_vehicle": 1000,
+            "available_colors": "blue",
+            "mileage": 60,
+            "power": 60,
+            "max_speed": 60,
+            "createdAt": "2023-06-18T09:49:16.217Z",
+            "updatedAt": "2023-06-18T09:49:16.217Z",
+            "__v": 0
+        },
+        {
+            "_id": "648f387fbe0167a14ce2ff11",
+            "model_name": "name1",
+            "year_of_model": "2020",
+            "price_of_new_vehicle": 1000,
+            "available_colors": "blue",
+            "mileage": 60,
+            "power": 60,
+            "max_speed": 60,
+            "createdAt": "2023-06-18T17:01:51.437Z",
+            "updatedAt": "2023-06-18T17:01:51.437Z",
+            "__v": 0
+        },
+        {
+            "_id": "648feefde88df70760670de1",
+            "model_name": "name1",
+            "year_of_model": "2020",
+            "price_of_new_vehicle": 1000,
+            "available_colors": "blue",
+            "mileage": 60,
+            "power": 60,
+            "max_speed": 60,
+            "createdAt": "2023-06-19T06:00:29.711Z",
+            "updatedAt": "2023-06-19T06:00:29.711Z",
+            "__v": 0
+        },
+        {
+            "_id": "649051c2c0397c0277d8235a",
+            "model_name": "name1",
+            "year_of_model": "2020",
+            "price_of_new_vehicle": 1000,
+            "available_colors": "blue",
+            "mileage": 60,
+            "power": 60,
+            "max_speed": 60,
+            "createdAt": "2023-06-19T13:01:54.908Z",
+            "updatedAt": "2023-06-19T13:01:54.908Z",
+            "__v": 0
+        }
+    ]
+}
